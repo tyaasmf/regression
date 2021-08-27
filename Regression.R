@@ -121,4 +121,4 @@ data_house_new$bedrooms[data_house_new$bedrooms==0] = median(data_house_new$bedr
 data_house_new$beds[data_house_new$beds==0] = median(data_house_new$beds)
 
 prediction_rf_new <- model_rf_best$predict_newdata(newdata = data_house_new)
-as.data.table(prediksi_rf_new)
+as.data.table(prediction_rf_new)
